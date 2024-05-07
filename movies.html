@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>cards</title>
+
+    <style>
+
+
+.card{
+     display: flex;
+     height:400px;
+     width: 400px;
+     border: 2px solid white;
+     background-color: white;
+     margin:5px;
+     box-shadow: 0.5px 0.5px 20px 0.1px grey;
+     border-radius:10px;
+     margin-left: 70px;
+     position:relative;
+     justify-content:space-evenly;
+     flex-direction: row;
+}
+.head{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 50px;
+    font-size: large;
+    display: inline-block;
+    margin-left: 10px;
+   
+}
+
+.image{
+    margin-left: 11px;
+    margin-top:9px;
+    border-radius: 50px;
+    position:absolute;
+    top:40px;
+
+}
+.a-card{
+    box-shadow: 1px 1px 1px 1px grey;
+    display:inline-block;
+    width:50px;
+    height: 50px;
+    border:1px 1px 3px 0.5px gray;
+    margin:5px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="card">
+         <img src="blackadam.jpg" alt="icon" height="100px " width="100px" class="image"/>
+    <h2 class="head">
+        Blackadam
+    </h2>
+    
+    <div class="forms">
+        <form>
+        <label> <b>NO. OF GUESTS</b> </label></br>
+       <select id="no.of people">
+       <option>(1 to 2 people) </option>
+       <option>(1 to 4 people) </option>
+       <option>(1 to 3 people)</option>
+       <option>(6 people)</option>
+       </select></br></br>
+       <label for="date"> <b>ARRIVAL DATE & TIME</b></label></br>
+       <input type="date" id="date"/>
+       <input type="time" id="time"/></br></br>
+       <label><b>DEPARTURE DATE</b></label></br>
+       <select id="month">
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+      <select id="day">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+    <select id="year">
+      <option>2019</option>
+      <option>2020</option>
+      <option>2021</option>
+      <option>2022</option>
+      <option>2023</option>
+    </select></br></br>
+    <label id="pickup"> <b>FREE PICK UP ?</b></label></br>
+    <input  type="radio" name="radio" id =" yes"/>
+    <label  for="yes">  Yes please ! -pick me up on arrival</label>
+  </br>
+    <input type="radio" name="radio" id="NO"/>
+    <label  for ="NO" > No Thanks -I'll make my own way there </label></br></br>
+    <label id="REQUESTS"> <b><i> SPECIAL REQUESTS</i></b></label></br>
+    <input type=" text" id="REQUESTS" size="40px" width="40px"/></br></br>
+    <label for="submit"> <b><i> <h> SUBMIT</h></i></b></label></br>
+    <input type="submit" id="submit"/>
+  </form>
+    
+    </div>
+   </div>
+
+    <div class="card">
+        <div class="a-card"> </div>
+    <h2 class="head">
+        
+    </h2>
+      
+    </div>
+    <div class="card">
+        <div class="a-card"> </div>
+      <h2 class="head">
+      </h2>
+     
+    </div>
+    
+    
+    
+</body>
+</html>
